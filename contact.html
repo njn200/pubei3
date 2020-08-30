@@ -1,0 +1,169 @@
+﻿
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>社区</title>
+    <!-- Meta tag Keywords -->
+    <script src="js/5.js"></script>
+    <link href="css/5.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.2&key=5a6b3edcc90afb56bcb10de5f2dfd960"></script>
+    <script type="text/javascript" src="js/showMap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords"
+          content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--// Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- //Custom-Files -->
+    <!-- Web-Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
+    <!-- //Web-Fonts -->
+</head>
+
+<body>
+	<!-- home -->
+	<div id="home">
+		<!-- banner -->
+		<div class="banner_w3lspvt-2 text-center">
+			<!-- nav -->
+			<div class="nav_w3ls pt-4 pb-3 text-center position-static">
+				<nav>
+					<label for="drop" class="toggle">Menu</label>
+					<input type="checkbox" id="drop" />
+                    <ul class="menu">
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="#rongyu">荣誉</a></li>
+                        <li><a href="#gallery">美食</a></li>
+                        <li><a href="#testi">景点</a></li>
+                        <li><a href="about.html">历史</a></li>
+                        <li><a href="jingji.html">发展</a></li>
+                        <li><a href="contact.html">社区</a></li>
+                    </ul>
+				</nav>
+			</div>
+			<!-- //nav -->
+			<div class="banner-inner">
+				<h1><a href="index.html" class="logo-2">小城浦北</a></h1>
+			</div>
+		</div>
+		<!-- //banner -->
+	</div>
+	<!-- //home -->
+
+	<!-- contact -->
+	<section class="contact py-5" id="contact">
+		<div class="container py-md-5">
+			<h3 class="tittle text-center">家乡论坛</h3>
+			<p class="sub-tittle text-center mt-3 mb-sm-5 mb-4">为了生活被迫流落他乡的你，看到这一幅幅熟悉的场景，
+            是否激起了你的乡愁。来自远方的朋友，对我的家乡有什么印象，欢迎大家在下方留言。</p>
+			<div class="row mt-4">
+                <div class="to-do">
+
+                    <div class="a">
+                        <h2>所有留言</h2>
+                        <button onclick="checkall()">全选</button>
+                        <button onclick="deselectall()">取消全选</button>
+                        <button onclick="remove()">删除留言</button>
+                        <ul id="ul"></ul>
+                    </div>
+                    <div class="b">
+                        <h4>新建留言：</h4>
+                        <textarea cols="700" rows="3" id="tex" placeholder="……"></textarea>
+                        <p><button onclick="add()">添加</button></p>
+                    </div>
+                </div>
+			</div>
+            <p>我的家乡在北海以北的地方，所以叫做浦北……</p>
+            <div id="container" style=" width:auto;height:610px;border:0px solid gray"></div>
+		</div>
+	</section>
+	<!-- //contact -->
+
+	
+
+	<!-- footer -->
+	<footer class="footer-sec-w3layouts py-5 ">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row pb-3">
+				<div class="col-xl-5 col-md-6 footer-left-info text-left">
+					<div class="logo-footer">
+						<h2>
+							<a href="index.html">浦北印象</a>
+						</h2>
+					</div>
+                    <p class="mt-lg-5 mt-4">
+                        &nbsp &nbsp &nbsp &nbsp浦北是什么？有一首歌叫做《南山南》的歌专门写道：“南风喃，北海北”。没错，浦北就在北海的北边，一个常年可以听到温润的南风呢喃的地方。
+                    </p>
+				</div>
+				<div class="col-md-6 footer-right-info text-right offset-xl-1 mt-md-0 mt-5">
+					<h6>我爱这里！</h6>
+					<address class="ad-info mt-lg-5 mt-4">
+						<strong>不会忘记！</strong>
+						<br> 说实话，
+						<br> 离开家乡之后怀疑
+						<br>
+						<abbr title="Phone">吃</abbr> 到的都是假香蕉。
+					</address>
+				</div>
+			</div>
+			<!-- social icons -->
+			<div class="social-icons-footer social-w3pvt-footer border-top text-center pt-md-5 pt-4 mt-md-5 mt-4">
+				<ul class="list-unstyled">
+					<li>
+						<a href="#">
+							<span class="fa fa-facebook"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-twitter"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-dribbble"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-instagram"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //social icons -->
+		</div>
+	</footer>
+	<!-- //footer -->
+	<!-- copyright -->
+	<div class="cpy-right text-center py-3">
+        <p>Copyright &copy; 2019.nana.<a target="_blank" href="http://sc.chinaz.com/moban/">254746125@qq.com</a></p>
+	</div>
+	<!-- //copyright -->
+	<!-- move top icon -->
+	<a href="#home" class="move-top text-center">
+		<span class="fa fa-chevron-circle-up" aria-hidden="true"></span>
+	</a>
+	<!-- //move top icon -->
+
+</body>
+
+</html>
